@@ -1,0 +1,12 @@
+#!/bin/bash
+voms-proxy-init -voms cms -valid 240:00
+condor_submit configs_LLGluino/condor_LLGluino_0p001.cmd
+condor_submit configs_LLGluino/condor_LLGluino_0p01.cmd
+condor_submit configs_LLGluino/condor_LLGluino_0p1.cmd
+condor_submit configs_LLGluino/condor_LLGluino_100000.cmd
+condor_submit configs_LLGluino/condor_LLGluino_10000.cmd
+condor_submit configs_LLGluino/condor_LLGluino_1000.cmd
+condor_submit configs_LLGluino/condor_LLGluino_100.cmd
+condor_submit configs_LLGluino/condor_LLGluino_10.cmd
+condor_submit configs_LLGluino/condor_LLGluino_1.cmd
+condor_submit configs_LLGluino/condor_LLGluino_1e18.cmd
